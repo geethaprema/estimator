@@ -1,0 +1,66 @@
+.note {
+	text-align: center;
+	height: 50px;
+	background: #0072ff;
+	color: #fff;
+	font-weight: bold;
+	line-height: 80px;
+}
+
+.form-content {
+	padding: 5%;
+	border: 1px solid #ced4da;
+	margin-bottom: 2%;
+}
+
+.form-control {
+	border-radius: 1.5rem;
+}
+input {
+    margin: .4rem;
+}
+label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+label img {
+  height: 50%;
+  width: 50%;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+:checked + label {
+  border-color: #ddd;
+}
+
+:checked + label:before {
+  
+  background-color: grey;
+  transform: scale(1);
+}
+
+:checked + label img {
+  transform: scale(0.9);
+  box-shadow: 0 0 5px #333;
+  z-index: -1;
+}
+.table .thead-dark th{
+
+background-color: #0072ff ;
+border-color : none;
+}
